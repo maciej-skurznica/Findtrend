@@ -1,0 +1,29 @@
+html,
+body,
+ul,
+ol,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+}
+
+.test {
+  color: #a8ff35;
+  background-color: #8cc83a;
+  border: 1px solid #000000;
+}
+
+/*# sourceMappingURL=styles.css.map */
