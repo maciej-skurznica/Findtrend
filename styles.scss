@@ -1,10 +1,12 @@
+// variables
+$color: #fff;
+// mixins like flex div
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #fff;
+  background: $color;
   font-family: "Roboto", sans-serif;
 }
-
-/*# sourceMappingURL=styles.css.map */
