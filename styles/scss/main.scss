@@ -1,5 +1,12 @@
 @import "variables";
 @import "reset";
 @import "global";
-@import "section1";
+@import "navbar";
+@import "section-1";
 @import "footer";
+
+.main {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}

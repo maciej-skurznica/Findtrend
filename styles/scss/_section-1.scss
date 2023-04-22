@@ -1,0 +1,64 @@
+.section-1 {
+  background-image: url("../../assets/images/bg-hero-mobile.jpg");
+  padding: 144px 0 330px;
+}
+
+.section-1-h2 {
+  color: $off-white;
+  line-height: 40.32px;
+  text-align: center;
+}
+
+.section-1-paragraphs {
+  margin-top: 16px;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    text-align: center;
+    color: $grey-1;
+  }
+}
+
+.section-1-btn {
+  margin-top: 32px;
+}
+
+.section-1-tabs {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 60px;
+}
+
+.section-1-tab {
+  position: absolute;
+}
+
+.section-1-tab img {
+  width: 299px;
+}
+
+.section-1-tab.twitter {
+  transform: rotate(-4deg);
+  z-index: 4;
+}
+
+.section-1-tab.pinterest {
+  transform: rotate(2deg);
+  top: 70px;
+  z-index: 3;
+}
+
+.section-1-tab.facebook {
+  transform: rotate(-2deg);
+  top: 130px;
+  z-index: 2;
+}
+
+.section-1-tab.dribble {
+  transform: rotate(4deg);
+  top: 200px;
+  z-index: 1;
+}

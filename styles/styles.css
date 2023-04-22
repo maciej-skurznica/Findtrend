@@ -2,9 +2,18 @@ html,
 body,
 ul,
 ol,
-button {
+button,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 button {
@@ -16,14 +25,144 @@ button {
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background: darkred;
+}
+
 div {
   display: flex;
 }
 
-.test {
-  color: #a8ff35;
-  background-color: #8cc83a;
-  border: 1px solid #000000;
+h1 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  padding: 12px 24px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: #a8ff35;
+}
+.btn-green:hover {
+  background-color: #87d322;
+}
+
+.btn-black {
+  background-color: #000000;
+}
+.btn-black:hover {
+  background-color: #2b2b2b;
+}
+
+.section {
+  width: 100%;
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-1 {
+  background-image: url("../../assets/images/bg-hero-mobile.jpg");
+  padding: 144px 0 330px;
+}
+
+.section-1-h2 {
+  color: #ffffff;
+  line-height: 40.32px;
+  text-align: center;
+}
+
+.section-1-paragraphs {
+  margin-top: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+.section-1-paragraphs p {
+  text-align: center;
+  color: #8b8b8b;
+}
+
+.section-1-btn {
+  margin-top: 32px;
+}
+
+.section-1-tabs {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 60px;
+}
+
+.section-1-tab {
+  position: absolute;
+}
+
+.section-1-tab img {
+  width: 299px;
+}
+
+.section-1-tab.twitter {
+  transform: rotate(-4deg);
+  z-index: 4;
+}
+
+.section-1-tab.pinterest {
+  transform: rotate(2deg);
+  top: 70px;
+  z-index: 3;
+}
+
+.section-1-tab.facebook {
+  transform: rotate(-2deg);
+  top: 130px;
+  z-index: 2;
+}
+
+.section-1-tab.dribble {
+  transform: rotate(4deg);
+  top: 200px;
+  z-index: 1;
+}
+
+.main {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

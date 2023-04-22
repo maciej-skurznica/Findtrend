@@ -2,6 +2,75 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  font-family: $font-primary;
+  font-size: $mobile-font-medium;
+  line-height: $mobile-font-medium;
+  font-weight: $weight-standard;
+  color: $black;
+  // delete ↓
+  background: darkred;
+}
+
 div {
   display: flex;
+}
+
+h1 {
+  font-size: $mobile-font-ultra-large;
+  line-height: $mobile-font-ultra-large;
+}
+
+h2 {
+  font-size: $mobile-font-ex-large;
+  font-weight: $weight-ex-bold;
+}
+
+h3 {
+  font-size: $mobile-font-large;
+  line-height: $mobile-font-large;
+}
+
+p {
+  font-size: $mobile-font-small;
+  line-height: 21px;
+}
+
+button {
+  font-size: $mobile-font-small;
+  font-weight: $weight-bold;
+  line-height: 19.6px;
+  padding: 12px 24px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: $primary;
+
+  &:hover {
+    background-color: $green-button-hover;
+  }
+}
+
+.btn-black {
+  background-color: $black;
+
+  &:hover {
+    background-color: $black-2;
+  }
+}
+
+.section {
+  width: 100%;
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
