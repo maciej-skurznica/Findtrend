@@ -91,8 +91,6 @@ button:active {
   padding: 0 18px;
   flex-direction: column;
   align-items: center;
-  background-color: #a8ff35;
-  background-color: rgba(168, 255, 53, 0.1);
 }
 
 .navbar {
@@ -132,6 +130,8 @@ button:active {
 
 .navbar-dropdown-menu {
   width: 100%;
+  height: calc(100vh - 88px);
+  background: rgba(0, 0, 0, 0.9);
   flex-direction: column;
   position: absolute;
   top: 88px;
@@ -149,7 +149,6 @@ button:active {
   align-items: center;
   padding: 60px 0 8px;
   background-color: #000000;
-  background: rgba(0, 0, 0, 0.1);
 }
 
 .navbar-links a {
@@ -172,7 +171,6 @@ button:active {
   padding-bottom: 80px;
   gap: 28px;
   background-color: #000000;
-  opacity: 0.1;
 }
 
 .navbar-btns button.navbar-btn {
@@ -194,15 +192,6 @@ button:active {
 .navbar-btns button.navbar-btn.white {
   background-color: #ffffff;
   color: #000000;
-}
-
-.navbar-dropdown-opacity {
-  position: absolute;
-  width: 100%;
-  height: calc(100vh - 88px);
-  background-color: #000000;
-  opacity: 0.5;
-  z-index: -1;
 }
 
 .section-1 {
