@@ -195,7 +195,11 @@ button:active {
 }
 
 .section-1 {
-  background-image: url("../../assets/images/bg-hero-mobile.jpg");
+  background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 144px 0 330px;
 }
 
@@ -260,6 +264,14 @@ button:active {
   z-index: 1;
 }
 
+html {
+  background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -277,7 +289,6 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
-  background-image: url("../../assets/images/bg-hero-mobile.jpg");
   color: yellow;
 }
 

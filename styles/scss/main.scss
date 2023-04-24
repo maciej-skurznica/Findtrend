@@ -5,6 +5,14 @@
 @import "section-1";
 @import "footer";
 
+html {
+  background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -22,7 +30,6 @@ body {
   line-height: $mobile-font-medium;
   font-weight: $weight-standard;
   color: $black;
-  background-image: url("../../assets/images/bg-hero-mobile.jpg");
   // delete ↓
   color: yellow;
 }
