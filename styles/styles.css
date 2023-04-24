@@ -130,7 +130,7 @@ button:active {
 
 .navbar-dropdown-menu {
   width: 100%;
-  height: calc(100dvh - 88px);
+  height: calc(100lvh - 88px);
   background: rgba(0, 0, 0, 0.5);
   flex-direction: column;
   position: absolute;
@@ -264,7 +264,7 @@ button:active {
 html,
 body {
   overflow-x: hidden;
-  height: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
 body {
