@@ -41,6 +41,11 @@
   position: absolute;
   top: 88px;
   z-index: 5;
+  display: none;
+}
+
+.navbar-dropdown-menu-active {
+  display: flex;
 }
 
 .navbar-links {

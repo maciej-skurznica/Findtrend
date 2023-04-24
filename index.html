@@ -80,5 +80,26 @@
 
     <!-- _footer.scss -->
     <div class="footer">footer</div>
+
+    <script>
+      const navbarTop = document.querySelector(".navbar-top");
+      const dropdownBtn = document.querySelector(".navbar-dropdown-btn");
+      const navbarMenu = document.querySelector(".navbar-dropdown-menu");
+      const allMenuItems = document.querySelectorAll(
+        ".navbar-links a, .navbar-btns button"
+      );
+
+      dropdownBtn.addEventListener("click", () => {
+        navbarTop.classList.toggle("navbar-top-active");
+        navbarMenu.classList.toggle("navbar-dropdown-menu-active");
+      });
+
+      allMenuItems.forEach((link) => {
+        link.addEventListener("click", () => {
+          navbarTop.classList.toggle("navbar-top-active");
+          navbarMenu.classList.toggle("navbar-dropdown-menu-active");
+        });
+      });
+    </script>
   </body>
 </html>
