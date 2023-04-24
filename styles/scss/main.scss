@@ -6,7 +6,9 @@
 @import "footer";
 
 html {
-  background: $black;
+  // background: $black;
+  background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 html,
@@ -27,6 +29,7 @@ body {
   font-weight: $weight-standard;
   color: $black;
   // delete ↓
+  background: $primary;
   color: yellow;
 }
 
