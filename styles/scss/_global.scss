@@ -26,6 +26,10 @@ p {
   line-height: 21px;
 }
 
+a {
+  transition: 100ms color ease-in-out;
+}
+
 button {
   font-size: $mobile-font-small;
   font-weight: $weight-bold;
@@ -33,10 +37,16 @@ button {
   padding: 12px 24px;
   border-radius: 40px;
   cursor: pointer;
+  transition: 200ms background-color ease-in-out, 100ms box-shadow ease-in-out;
+
+  &:active {
+    transform: translateY(2px);
+  }
 }
 
 .btn-green {
   background-color: $primary;
+  color: $black;
 
   &:hover {
     background-color: $green-button-hover;
@@ -45,6 +55,7 @@ button {
 
 .btn-black {
   background-color: $black;
+  color: $off-white;
 
   &:hover {
     background-color: $black-2;

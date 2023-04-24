@@ -5,6 +5,11 @@
 @import "section-1";
 @import "footer";
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   width: 100vw;
   min-width: 375px;
@@ -17,9 +22,9 @@ body {
   line-height: $mobile-font-medium;
   font-weight: $weight-standard;
   color: $black;
-  overflow-x: hidden;
   // delete ↓
   background: darkred;
+  // background: $black;
 }
 
 .main {

@@ -24,6 +24,8 @@
 }
 
 .navbar-dropdown-btn {
+  margin-right: 5px;
+
   &:hover {
     cursor: pointer;
   }
@@ -52,16 +54,53 @@
   width: 100%;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
-  gap: 40px;
+  padding: 60px 0 8px;
   background-color: $black;
+}
+
+.navbar-links a {
+  color: $off-white;
+  padding: 20px;
+  border-radius: 40px;
+
+  &:hover {
+    color: $grey-2;
+  }
+
+  &:active {
+    color: $grey-2;
+    transform: translateY(2px);
+  }
 }
 
 .navbar-btns {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  padding: 28px 0 80px;
+  padding-bottom: 80px;
   gap: 28px;
   background-color: $black;
+}
+
+.navbar-btns button.navbar-btn {
+  font-size: $mobile-font-medium;
+  font-weight: $weight-standard;
+  line-height: $mobile-font-medium;
+  padding: 12px 32px;
+  color: $off-white;
+
+  &:hover {
+    box-shadow: 0 0 2px $off-white inset;
+    box-shadow: 0 1px 2px $off-white;
+  }
+
+  &:active {
+    box-shadow: 0 0 2px $off-white inset;
+    transform: translateY(2px);
+  }
+}
+
+.navbar-btns button.navbar-btn.white {
+  background-color: $off-white;
+  color: $black;
 }

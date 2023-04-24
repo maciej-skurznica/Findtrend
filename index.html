@@ -25,7 +25,8 @@
           <img src="./assets/images/Logo-color.svg" alt="logo" />
         </div>
         <div class="navbar-dropdown-btn">
-          <img src="./assets/images/hamburger.svg" alt="menu" />
+          <img src="./assets/images/hamburger.svg" alt="menu" id="menu" />
+          <img src="./assets/images/hamburger-close.svg" alt="close" id="close" hidden />
         </div>
       </div>
       <div class="navbar-dropdown-menu">
@@ -38,7 +39,7 @@
         </div>
         <div class="navbar-btns">
           <button class="navbar-btn">Login</button>
-          <button class="navbar-btn">Register</button>
+          <button class="navbar-btn white">Register</button>
         </div>
       </div>
     </div>
@@ -85,6 +86,8 @@
       const navbarTop = document.querySelector(".navbar-top");
       const dropdownBtn = document.querySelector(".navbar-dropdown-btn");
       const navbarMenu = document.querySelector(".navbar-dropdown-menu");
+      const menuBtn = document.querySelector("#menu");
+      const closeBtn = document.querySelector("#close");
       const allMenuItems = document.querySelectorAll(
         ".navbar-links a, .navbar-btns button"
       );
@@ -92,12 +95,16 @@
       dropdownBtn.addEventListener("click", () => {
         navbarTop.classList.toggle("navbar-top-active");
         navbarMenu.classList.toggle("navbar-dropdown-menu-active");
+        menuBtn.hidden = !menuBtn.hidden;
+        closeBtn.hidden = !closeBtn.hidden;
       });
 
       allMenuItems.forEach((link) => {
         link.addEventListener("click", () => {
           navbarTop.classList.toggle("navbar-top-active");
           navbarMenu.classList.toggle("navbar-dropdown-menu-active");
+          menuBtn.hidden = false;
+          closeBtn.hidden = true;
         });
       });
     </script>
