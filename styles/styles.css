@@ -269,11 +269,6 @@ button:active {
   z-index: 1;
 }
 
-html {
-  background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-
 html,
 body {
   overflow-x: hidden;
@@ -291,6 +286,8 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
+  background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center fixed;
+  background-size: cover;
   color: yellow;
 }
 
