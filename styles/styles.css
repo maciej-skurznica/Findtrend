@@ -131,7 +131,7 @@ button:active {
 .navbar-dropdown-menu {
   width: 100%;
   height: calc(100vh - 88px);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   flex-direction: column;
   position: absolute;
   top: 88px;
@@ -259,10 +259,6 @@ button:active {
   transform: rotate(4deg);
   top: 200px;
   z-index: 1;
-}
-
-html {
-  background: #000000;
 }
 
 html,
