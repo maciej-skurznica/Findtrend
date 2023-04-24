@@ -34,10 +34,12 @@
 
 .section-1-tab {
   position: absolute;
+  justify-content: center;
 }
 
 .section-1-tab img {
-  width: 299px;
+  width: 80%;
+  max-width: 500px;
 }
 
 .section-1-tab.twitter {

@@ -25,21 +25,6 @@ button {
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  min-width: 375px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000000;
-  background: darkred;
-}
-
 div {
   display: flex;
 }
@@ -90,9 +75,68 @@ button {
 .section {
   width: 100%;
   padding: 0 18px;
-  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  min-width: 375px;
+  flex-direction: column;
+  position: absolute;
+}
+
+.navbar-top {
+  width: 100%;
+  height: 88px;
+  padding: 0 18px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.navbar-top-active {
+  background-color: #000000;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-dropdown-btn:hover {
+  cursor: pointer;
+}
+.navbar-dropdown-btn:active {
+  padding-top: 2px;
+}
+
+.navbar-dropdown-menu {
+  width: 100%;
+  height: calc(100vh - 88px);
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 88px;
+  z-index: 5;
+}
+
+.navbar-links {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  gap: 40px;
+  background-color: #000000;
+}
+
+.navbar-btns {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 0 80px;
+  gap: 28px;
+  background-color: #000000;
 }
 
 .section-1 {
@@ -130,10 +174,12 @@ button {
 
 .section-1-tab {
   position: absolute;
+  justify-content: center;
 }
 
 .section-1-tab img {
-  width: 299px;
+  width: 80%;
+  max-width: 500px;
 }
 
 .section-1-tab.twitter {
@@ -157,6 +203,21 @@ button {
   transform: rotate(4deg);
   top: 200px;
   z-index: 1;
+}
+
+body {
+  width: 100vw;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background: darkred;
 }
 
 .main {

@@ -2,22 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  min-width: 375px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  font-family: $font-primary;
-  font-size: $mobile-font-medium;
-  line-height: $mobile-font-medium;
-  font-weight: $weight-standard;
-  color: $black;
-  // delete ↓
-  background: darkred;
-}
-
 div {
   display: flex;
 }
@@ -70,7 +54,6 @@ button {
 .section {
   width: 100%;
   padding: 0 18px;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
