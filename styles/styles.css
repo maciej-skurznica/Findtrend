@@ -149,6 +149,7 @@ button:active {
   align-items: center;
   padding: 60px 0 8px;
   background-color: #000000;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .navbar-links a {
@@ -171,6 +172,7 @@ button:active {
   padding-bottom: 80px;
   gap: 28px;
   background-color: #000000;
+  opacity: 0.1;
 }
 
 .navbar-btns button.navbar-btn {

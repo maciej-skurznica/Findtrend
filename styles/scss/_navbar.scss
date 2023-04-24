@@ -54,6 +54,7 @@
   align-items: center;
   padding: 60px 0 8px;
   background-color: $black;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .navbar-links a {
@@ -78,6 +79,7 @@
   padding-bottom: 80px;
   gap: 28px;
   background-color: $black;
+  opacity: 0.1;
 }
 
 .navbar-btns button.navbar-btn {
