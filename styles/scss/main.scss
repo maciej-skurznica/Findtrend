@@ -22,9 +22,9 @@ body {
   line-height: $mobile-font-medium;
   font-weight: $weight-standard;
   color: $black;
+  background-image: url("../../assets/images/bg-hero-mobile.jpg");
   // delete ↓
-  background: darkred;
-  // background: $black;
+  color: yellow;
 }
 
 .main {

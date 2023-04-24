@@ -277,7 +277,8 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
-  background: darkred;
+  background-image: url("../../assets/images/bg-hero-mobile.jpg");
+  color: yellow;
 }
 
 .main {
