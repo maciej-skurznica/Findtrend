@@ -37,9 +37,7 @@
 
 .navbar-dropdown-menu {
   width: 100%;
-  height: calc(100vh - 88px);
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 88px;
   z-index: 5;
@@ -103,4 +101,13 @@
 .navbar-btns button.navbar-btn.white {
   background-color: $off-white;
   color: $black;
+}
+
+.navbar-dropdown-opacity {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 88px);
+  background-color: $black;
+  opacity: 0.5;
+  z-index: -1;
 }
