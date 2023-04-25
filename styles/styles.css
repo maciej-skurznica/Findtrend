@@ -198,6 +198,12 @@ button:active {
   color: #000000;
 }
 
+.main {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section-1 {
   background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -287,18 +293,12 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  font-family: "Effra", "Roboto", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
   color: #000000;
   color: yellow;
-}
-
-.main {
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
