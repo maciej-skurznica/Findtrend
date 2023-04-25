@@ -138,10 +138,12 @@ button:active {
   top: 88px;
   z-index: 5;
   display: none;
+  animation: navbar-dropdown-menu 400ms;
 }
 
 .navbar-dropdown-menu-active {
   display: flex;
+  transition: all 2s ease-in-out 2s;
 }
 
 .navbar-links {
@@ -194,6 +196,14 @@ button:active {
   }
   .navbar-btns button.navbar-btn:hover {
     box-shadow: 0 0 2px #ffffff inset;
+  }
+}
+@keyframes navbar-dropdown-menu {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .main {
