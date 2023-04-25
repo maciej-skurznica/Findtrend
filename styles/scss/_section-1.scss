@@ -39,8 +39,11 @@
 }
 
 .section-1-tab img {
-  width: 80%;
-  max-width: 500px;
+  width: 299px;
+
+  @media screen and (min-width: 490px) {
+    width: 380px;
+  }
 }
 
 .section-1-tab.twitter {
