@@ -104,7 +104,7 @@ button:active {
 .navbar-top {
   width: 100%;
   height: 88px;
-  padding: 0 18px;
+  padding: 0 calc(18px + env(safe-area-inset-right)) 0 calc(18px + env(safe-area-inset-left));
   justify-content: space-between;
   align-items: center;
   position: absolute;
@@ -285,7 +285,6 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   color: yellow;
 }
 
