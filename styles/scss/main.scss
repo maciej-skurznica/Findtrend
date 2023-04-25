@@ -28,6 +28,8 @@ body {
   line-height: $mobile-font-medium;
   font-weight: $weight-standard;
   color: $black;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
   // delete ↓
   color: yellow;
 }
