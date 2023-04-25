@@ -9,7 +9,17 @@
     />
 
     <title>Findtrend</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/Fav-32px.svg" />
+    <link
+      href="https://assets.website-files.com/6233f2ac51d2013d6dca2856/6233f52033ec2d6adee8a659_Fav-32px.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://assets.website-files.com/6233f2ac51d2013d6dca2856/6233f522de0c3654499f2dbc_Fav-256px.png"
+      rel="apple-touch-icon"
+    />
+    <!-- <link rel="icon" type="image/png" href="./assets/images/Fav-32px.png" sizes="32x32" /> -->
+    <!-- <link rel="apple-touch-icon" href="/Fav-256px.png" /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -86,6 +96,7 @@
     <div class="footer">footer</div>
 
     <script>
+      const navbar = document.querySelector(".navbar");
       const navbarTop = document.querySelector(".navbar-top");
       const dropdownBtn = document.querySelector(".navbar-dropdown-btn");
       const navbarMenu = document.querySelector(".navbar-dropdown-menu");
@@ -95,20 +106,18 @@
         ".navbar-links a, .navbar-btns button"
       );
 
-      dropdownBtn.addEventListener("click", () => {
+      const handleClick = () => {
+        navbar.classList.toggle("full-height");
         navbarTop.classList.toggle("navbar-top-active");
         navbarMenu.classList.toggle("navbar-dropdown-menu-active");
         menuBtn.hidden = !menuBtn.hidden;
         closeBtn.hidden = !closeBtn.hidden;
-      });
+      };
+
+      dropdownBtn.addEventListener("click", () => handleClick());
 
       allMenuItems.forEach((link) => {
-        link.addEventListener("click", () => {
-          navbarTop.classList.toggle("navbar-top-active");
-          navbarMenu.classList.toggle("navbar-dropdown-menu-active");
-          menuBtn.hidden = false;
-          closeBtn.hidden = true;
-        });
+        link.addEventListener("click", () => handleClick());
       });
     </script>
   </body>
