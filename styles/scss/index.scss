@@ -29,6 +29,7 @@ body {
   line-height: $mobile-font-medium;
   font-weight: $weight-standard;
   color: $black;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   // delete ↓
   color: yellow;
 }
