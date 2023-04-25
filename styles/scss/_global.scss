@@ -27,7 +27,7 @@ p {
 }
 
 a {
-  transition: 100ms color ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 button {
@@ -37,29 +37,23 @@ button {
   padding: 12px 24px;
   border-radius: 40px;
   cursor: pointer;
-  transition: 200ms background-color ease-in-out, 100ms box-shadow ease-in-out;
+  transition: all 0.2s ease-in-out;
+  // transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
   &:active {
-    transform: translateY(2px);
+    transform: scale(1.05);
+    transition: 0.1s;
   }
 }
 
 .btn-green {
   background-color: $primary;
   color: $black;
-
-  &:hover {
-    background-color: $green-button-hover;
-  }
 }
 
 .btn-black {
   background-color: $black;
   color: $off-white;
-
-  &:hover {
-    background-color: $black-2;
-  }
 }
 
 .section {
@@ -67,4 +61,14 @@ button {
   padding: 0 18px;
   flex-direction: column;
   align-items: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-green:hover {
+    background-color: $green-button-hover;
+  }
+
+  .btn-black:hover {
+    background-color: $black-2;
+  }
 }

@@ -54,7 +54,7 @@ p {
 }
 
 a {
-  transition: 100ms color ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 button {
@@ -64,26 +64,21 @@ button {
   padding: 12px 24px;
   border-radius: 40px;
   cursor: pointer;
-  transition: 200ms background-color ease-in-out, 100ms box-shadow ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 button:active {
-  transform: translateY(2px);
+  transform: scale(1.05);
+  transition: 0.1s;
 }
 
 .btn-green {
   background-color: #a8ff35;
   color: #000000;
 }
-.btn-green:hover {
-  background-color: #87d322;
-}
 
 .btn-black {
   background-color: #000000;
   color: #ffffff;
-}
-.btn-black:hover {
-  background-color: #2b2b2b;
 }
 
 .section {
@@ -93,6 +88,14 @@ button:active {
   align-items: center;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .btn-green:hover {
+    background-color: #87d322;
+  }
+  .btn-black:hover {
+    background-color: #2b2b2b;
+  }
+}
 .navbar {
   width: 100%;
   min-width: 375px;
@@ -124,14 +127,8 @@ button:active {
 
 .navbar-dropdown-btn {
   margin-right: 5px;
-}
-.navbar-dropdown-btn:hover {
   cursor: pointer;
 }
-.navbar-dropdown-btn:active {
-  padding-top: 2px;
-}
-
 .navbar-dropdown-menu {
   width: 100%;
   height: calc(100% - 88px);
@@ -160,12 +157,10 @@ button:active {
   padding: 20px;
   border-radius: 40px;
 }
-.navbar-links a:hover {
-  color: #adadad;
-}
 .navbar-links a:active {
   color: #adadad;
-  transform: translateY(2px);
+  transform: scale(1.1);
+  transition: 0.1s;
 }
 
 .navbar-btns {
@@ -184,13 +179,8 @@ button:active {
   padding: 12px 32px;
   color: #ffffff;
 }
-.navbar-btns button.navbar-btn:hover {
-  box-shadow: 0 0 2px #ffffff inset;
-  box-shadow: 0 1px 2px #ffffff;
-}
 .navbar-btns button.navbar-btn:active {
   box-shadow: 0 0 2px #ffffff inset;
-  transform: translateY(2px);
 }
 
 .navbar-btns button.navbar-btn.white {
@@ -198,6 +188,14 @@ button:active {
   color: #000000;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .navbar-links a:hover {
+    color: #adadad;
+  }
+  .navbar-btns button.navbar-btn:hover {
+    box-shadow: 0 0 2px #ffffff inset;
+  }
+}
 .main {
   width: 100%;
   flex-direction: column;

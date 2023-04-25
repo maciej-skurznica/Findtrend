@@ -30,13 +30,10 @@
 
 .navbar-dropdown-btn {
   margin-right: 5px;
-
-  &:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
 
   &:active {
-    padding-top: 2px;
+    // padding-top: 2px;
   }
 }
 
@@ -68,13 +65,10 @@
   padding: 20px;
   border-radius: 40px;
 
-  &:hover {
-    color: $grey-2;
-  }
-
   &:active {
     color: $grey-2;
-    transform: translateY(2px);
+    transform: scale(1.1);
+    transition: 0.1s;
   }
 }
 
@@ -94,18 +88,22 @@
   padding: 12px 32px;
   color: $off-white;
 
-  &:hover {
-    box-shadow: 0 0 2px $off-white inset;
-    box-shadow: 0 1px 2px $off-white;
-  }
-
   &:active {
     box-shadow: 0 0 2px $off-white inset;
-    transform: translateY(2px);
   }
 }
 
 .navbar-btns button.navbar-btn.white {
   background-color: $off-white;
   color: $black;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navbar-links a:hover {
+    color: $grey-2;
+  }
+
+  .navbar-btns button.navbar-btn:hover {
+    box-shadow: 0 0 2px $off-white inset;
+  }
 }
