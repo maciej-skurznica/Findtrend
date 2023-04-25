@@ -12,11 +12,10 @@ html {
 html,
 body {
   overflow-x: hidden;
-  width: -webkit-fill-available;
 }
 
 body {
-  width: 100lvw;
+  width: 100vw;
   min-width: 375px;
   display: flex;
   flex-direction: column;
