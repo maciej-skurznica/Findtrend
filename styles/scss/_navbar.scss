@@ -93,11 +93,11 @@
   &:active {
     box-shadow: 0 0 2px $off-white inset;
   }
-}
 
-.navbar-btns button.navbar-btn.white {
-  background-color: $off-white;
-  color: $black;
+  &.white {
+    background-color: $off-white;
+    color: $black;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -107,6 +107,10 @@
 
   .navbar-btns button.navbar-btn:hover {
     box-shadow: 0 0 2px $off-white inset;
+
+    &.white {
+      background-color: $grey-2;
+    }
   }
 }
 

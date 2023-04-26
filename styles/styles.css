@@ -184,7 +184,6 @@ button:active {
 .navbar-btns button.navbar-btn:active {
   box-shadow: 0 0 2px #ffffff inset;
 }
-
 .navbar-btns button.navbar-btn.white {
   background-color: #ffffff;
   color: #000000;
@@ -196,6 +195,9 @@ button:active {
   }
   .navbar-btns button.navbar-btn:hover {
     box-shadow: 0 0 2px #ffffff inset;
+  }
+  .navbar-btns button.navbar-btn:hover.white {
+    background-color: #adadad;
   }
 }
 @keyframes navbar-dropdown-menu {
