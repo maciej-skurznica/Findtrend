@@ -129,6 +129,7 @@ button:active {
   margin-right: 5px;
   cursor: pointer;
 }
+
 .navbar-dropdown-menu {
   width: 100%;
   height: calc(100% - 88px);
