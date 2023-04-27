@@ -7,7 +7,6 @@
 .section-1-h2 {
   color: $off-white;
   line-height: 40.32px;
-  text-align: center;
 }
 
 .section-1-paragraphs {
@@ -16,7 +15,6 @@
   align-items: center;
 
   p {
-    text-align: center;
     color: $grey-1;
   }
 }
@@ -40,10 +38,6 @@
 
 .section-1-tab img {
   width: 299px;
-
-  @media screen and (min-width: 490px) {
-    width: 380px;
-  }
 }
 
 .section-1-tab.twitter {
@@ -67,4 +61,10 @@
   transform: rotate(4deg);
   top: 200px;
   z-index: 1;
+}
+
+@media screen and (min-width: 490px) {
+  .section-1-tab img {
+    width: 380px;
+  }
 }

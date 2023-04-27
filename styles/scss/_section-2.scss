@@ -1,0 +1,62 @@
+.section-2 {
+  background-color: $primary;
+  padding: 80px 0;
+  gap: 80px;
+}
+
+.section-2-h2 {
+  color: $black;
+  font-weight: $weight-bold;
+  line-height: 40.32px;
+}
+
+.section-2-tab {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey-3;
+  border-radius: 14px;
+  position: relative;
+
+  img.tab-png {
+    width: 299px;
+    padding: 24px;
+  }
+
+  img.section-2-tab-arrow-png {
+    position: absolute;
+    width: 99px;
+
+    &.arrow-1 {
+      right: 0;
+      top: -48px;
+    }
+
+    &.arrow-2 {
+      left: 0;
+      bottom: -48px;
+    }
+  }
+}
+
+.section-2-paragraphs {
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    color: $black;
+  }
+}
+
+@media screen and (min-width: 490px) {
+  .section-2-tab img {
+    &.tab-png {
+      width: 380px;
+      padding: 30px;
+    }
+
+    &.section-2-tab-arrow-png {
+      width: 120px;
+    }
+  }
+}
