@@ -1,0 +1,49 @@
+.section-5 {
+  background-color: $grey-5;
+}
+
+.section-5-h2 {
+  color: $black;
+  line-height: 42.77px;
+  margin-bottom: 32px;
+  width: 100%;
+  text-align: center;
+
+  span {
+    white-space: nowrap;
+  }
+}
+
+.section-5-platforms-icons {
+  column-gap: 16px;
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 17px; // 32px - 15px hidden scrollbar
+
+  .icon-wrapper {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 1px 2px;
+
+    img {
+      transform: scale(0.5);
+    }
+
+    &.highlighted {
+      background-color: $primary;
+    }
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .section-5-h2,
+  .section-5-platforms-icons {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 817px) {
+  .section-5-platforms-icons {
+    justify-content: center;
+  }
+}
