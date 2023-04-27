@@ -319,7 +319,7 @@ button:active {
 }
 .section-2-tab img.section-2-tab-arrow-png.arrow-2 {
   left: 0;
-  bottom: -48px;
+  bottom: -50px;
 }
 
 .section-2-paragraphs {
@@ -340,7 +340,7 @@ button:active {
   }
 }
 .section-3 {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .section-3-h2 {
@@ -358,6 +358,48 @@ button:active {
 @media screen and (min-width: 430px) {
   .section-3-h2 {
     width: 80%;
+  }
+}
+.section-4 {
+  background-color: #ffffff;
+}
+
+.section-4-h2 {
+  color: #000000;
+  line-height: 42.77px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.section-4-h2 span {
+  white-space: nowrap;
+}
+
+.section-4-table {
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 14px;
+  margin-right: -15px;
+  width: calc(100% + 15px);
+}
+.section-4-table .table-wrapper {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  flex-basis: calc(50% - 15px);
+  aspect-ratio: 2.25/1;
+  justify-content: center;
+  align-items: center;
+}
+.section-4-table .table-wrapper img {
+  transform: scale(0.3);
+  position: absolute;
+}
+
+@media screen and (min-width: 430px) {
+  .section-4-h2 {
+    width: 80%;
+  }
+  .section-4-table {
+    width: calc(80% + 15px);
   }
 }
 html {
