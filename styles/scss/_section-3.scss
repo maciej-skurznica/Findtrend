@@ -1,0 +1,23 @@
+.section-3 {
+  background-color: $grey-3;
+}
+
+.section-3-h2 {
+  color: $black;
+  line-height: 42.77px;
+  text-align: left;
+
+  .grey {
+    color: $grey-2;
+  }
+
+  &.grey {
+    color: $grey-2;
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .section-3-h2 {
+    width: 80%;
+  }
+}
