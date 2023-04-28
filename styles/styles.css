@@ -446,6 +446,8 @@ button:active {
 
 .section-5-embeddings {
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .section-5-button {
