@@ -1,5 +1,8 @@
 .section-1 {
   background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding: 144px 0 330px;
 }
@@ -63,7 +66,7 @@
   z-index: 1;
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: $breakpoint-2) {
   .section-1-tab img {
     width: 380px;
   }

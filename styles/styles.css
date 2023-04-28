@@ -228,6 +228,9 @@ button:active {
 
 .section-1 {
   background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding: 144px 0 330px;
 }
@@ -460,6 +463,11 @@ button:active {
     width: 80%;
   }
 }
+@media screen and (min-width: 490px) {
+  .section-5-embeddings {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 816px) {
   .section-5-platforms-icons {
     justify-content: center;
@@ -490,7 +498,6 @@ body {
   font-weight: 400;
   color: #000000;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  color: yellow;
 }
 
 /*# sourceMappingURL=styles.css.map */

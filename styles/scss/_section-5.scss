@@ -45,10 +45,16 @@
   margin-top: 32px;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: $breakpoint-1) {
   .section-5-h2,
   .section-5-platforms-icons {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-2) {
+  .section-5-embeddings {
+    width: 90%;
   }
 }
 

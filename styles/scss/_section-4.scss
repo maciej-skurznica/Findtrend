@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: $breakpoint-1) {
   .section-4-h2 {
     width: 80%;
   }

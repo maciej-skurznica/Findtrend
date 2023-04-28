@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: $breakpoint-2) {
   .section-2-tab img {
     &.tab-png {
       width: 380px;
