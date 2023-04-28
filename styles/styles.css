@@ -448,15 +448,20 @@ button:active {
   flex-direction: column;
 }
 
+.section-5-button {
+  margin-top: 32px;
+}
+
 @media screen and (min-width: 430px) {
   .section-5-h2,
   .section-5-platforms-icons {
     width: 80%;
   }
 }
-@media screen and (min-width: 817px) {
+@media screen and (min-width: 816px) {
   .section-5-platforms-icons {
     justify-content: center;
+    margin-bottom: 32px;
   }
 }
 html {
