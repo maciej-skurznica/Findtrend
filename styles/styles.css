@@ -36,6 +36,7 @@ div {
 h1 {
   font-size: 60px;
   line-height: 60px;
+  font-weight: 400;
 }
 
 h2 {
@@ -47,6 +48,7 @@ h2 {
 h3 {
   font-size: 32px;
   line-height: 32px;
+  font-weight: 400;
 }
 
 p {
@@ -555,6 +557,59 @@ button:active {
   right: -95px;
 }
 
+.section-6-deal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  column-gap: 40px;
+  row-gap: 24px;
+  width: 100%;
+}
+.section-6-deal-container .section-6-card {
+  background: #fafafa;
+  padding: 30px 30px 24px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.section-6-deal-container .section-6-card .card-sub-title {
+  padding: 14px 0 24px;
+  border-bottom: 1px solid #adadad;
+}
+.section-6-deal-container .section-6-card .card-price {
+  margin-top: 32px;
+}
+.section-6-deal-container .section-6-card .card-price span {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.section-6-deal-container .section-6-card ul.card-benefit-list {
+  padding-bottom: 29px;
+  min-height: 317px;
+  list-style: url("../../assets/images/tick-mark.svg");
+  padding-left: 21px;
+}
+.section-6-deal-container .section-6-card ul.card-benefit-list li {
+  margin-top: 30px;
+  padding-left: 13px;
+}
+.section-6-deal-container .section-6-card button.card-button {
+  font-size: 18px;
+  line-height: 25.2px;
+  padding: 14px;
+}
+.section-6-deal-container .card-green {
+  background: #a8ff35;
+}
+
+@media screen and (min-width: 430px) {
+  .section-6-deal-container {
+    width: 80%;
+  }
+}
 html {
   background: #000000;
 }

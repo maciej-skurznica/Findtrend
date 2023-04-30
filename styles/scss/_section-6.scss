@@ -94,3 +94,65 @@
     right: -95px;
   }
 }
+
+.section-6-deal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  column-gap: 40px;
+  row-gap: 24px;
+  width: 100%;
+
+  .section-6-card {
+    background: $grey-5;
+    padding: 30px 30px 24px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .card-sub-title {
+      padding: 14px 0 24px;
+      border-bottom: 1px solid $grey-2;
+    }
+
+    .card-price {
+      margin-top: 32px;
+
+      span {
+        font-size: $mobile-font-medium;
+        line-height: $mobile-font-medium;
+        font-weight: $weight-standard;
+      }
+    }
+
+    ul.card-benefit-list {
+      padding-bottom: 29px;
+      min-height: 317px;
+      list-style: url("../../assets/images/tick-mark.svg");
+      padding-left: 21px;
+
+      li {
+        margin-top: 30px;
+        padding-left: 13px;
+      }
+    }
+
+    button.card-button {
+      font-size: $mobile-font-medium;
+      line-height: 25.2px;
+      padding: 14px;
+    }
+  }
+
+  .card-green {
+    background: $primary;
+  }
+}
+
+@media screen and (min-width: $breakpoint-1) {
+  .section-6-deal-container {
+    width: 80%;
+  }
+}
