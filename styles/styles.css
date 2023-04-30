@@ -155,7 +155,6 @@ button:active {
 
 .navbar-dropdown-menu-active {
   display: flex;
-  transition: all 2s ease-in-out 2s;
 }
 
 .navbar-links {
@@ -423,7 +422,6 @@ button:active {
   line-height: 42.77px;
   margin-bottom: 32px;
   width: 100%;
-  text-align: center;
 }
 .section-5-h2 span {
   white-space: nowrap;
@@ -474,6 +472,92 @@ button:active {
     margin-bottom: 32px;
   }
 }
+.section-6 {
+  background-color: #000000;
+}
+
+.section-6-h2 {
+  color: #ffffff;
+  line-height: 42.77px;
+  margin-bottom: 32px;
+}
+
+.section-6-toggle-btn.toggle-wrapper {
+  width: 104px;
+  height: 44px;
+  border-radius: 99px;
+  position: relative;
+}
+.section-6-toggle-btn.toggle-wrapper .stretch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+}
+.section-6-toggle-btn.toggle-wrapper input {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.section-6-toggle-btn.toggle-wrapper input:active ~ .knob:after {
+  width: 60px;
+}
+.section-6-toggle-btn.toggle-wrapper input:checked ~ .path:before {
+  color: #adadad;
+}
+.section-6-toggle-btn.toggle-wrapper input:checked ~ .path:after {
+  color: #ffffff;
+}
+.section-6-toggle-btn.toggle-wrapper input:checked ~ .knob:after {
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translateX(60px);
+}
+.section-6-toggle-btn.toggle-wrapper input:checked:active ~ .knob:after {
+  margin-left: -32px;
+}
+.section-6-toggle-btn.toggle-wrapper .path {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 21.78px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #ffffff;
+}
+.section-6-toggle-btn.toggle-wrapper .path:before, .section-6-toggle-btn.toggle-wrapper .path:after {
+  position: absolute;
+  top: 11px;
+  transition: color 100ms;
+}
+.section-6-toggle-btn.toggle-wrapper .path:before {
+  content: "Monthly";
+  right: 126px;
+}
+.section-6-toggle-btn.toggle-wrapper .path:after {
+  content: "Yearly";
+  left: 126px;
+  color: #adadad;
+}
+.section-6-toggle-btn.toggle-wrapper .knob:after {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background: #a8ff35;
+  border-radius: inherit;
+  left: 8px;
+  top: 8px;
+  transition: 0.15s ease all, transform 200ms cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+.section-6-toggle-btn.toggle-wrapper img.arrow-png {
+  position: absolute;
+  transform: scale(0.5);
+  top: 8px;
+  right: -95px;
+}
+
 html {
   background: #000000;
 }

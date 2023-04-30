@@ -1,0 +1,105 @@
+.section-6 {
+  background-color: $black;
+}
+
+.section-6-h2 {
+  color: $white;
+  line-height: 42.77px;
+  margin-bottom: 32px;
+}
+
+.section-6-toggle-btn.toggle-wrapper {
+  width: 104px;
+  height: 44px;
+  border-radius: 99px;
+  position: relative;
+
+  .stretch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+  }
+
+  input {
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+
+    &:active ~ .knob:after {
+      width: 60px;
+    }
+
+    &:checked {
+      ~ .path {
+        &:before {
+          color: $grey-2;
+        }
+
+        &:after {
+          color: $white;
+        }
+      }
+
+      ~ .knob:after {
+        -webkit-transform: translateX(60px);
+        -ms-transform: translateX(60px);
+        transform: translateX(60px);
+      }
+
+      &:active {
+        ~ .knob:after {
+          margin-left: -32px;
+        }
+      }
+    }
+  }
+
+  .path {
+    font-family: $font-secondary;
+    font-size: $mobile-font-medium;
+    line-height: 21.78px;
+    font-weight: $weight-medium;
+    color: $white;
+    background: $white;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 11px;
+      transition: color 100ms;
+    }
+
+    &:before {
+      content: "Monthly";
+      right: 126px;
+    }
+
+    &:after {
+      content: "Yearly";
+      left: 126px;
+      color: $grey-2;
+    }
+  }
+
+  .knob:after {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background: $primary;
+    border-radius: inherit;
+    left: 8px;
+    top: 8px;
+    transition: 0.15s ease all, transform 200ms cubic-bezier(0.18, 0.89, 0.35, 1.15);
+  }
+
+  img.arrow-png {
+    position: absolute;
+    transform: scale(0.5);
+    top: 8px;
+    right: -95px;
+  }
+}
