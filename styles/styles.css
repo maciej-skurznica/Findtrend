@@ -609,6 +609,45 @@ button:active {
     width: 80%;
   }
 }
+.section-7 {
+  background: #a8ff35;
+}
+.section-7 h2 {
+  line-height: 40.32px;
+}
+.section-7 h2.highlighted {
+  color: #87d322;
+}
+.section-7 button {
+  margin-top: 32px;
+}
+
+.footer {
+  background: #fafafa;
+  gap: 80px;
+}
+.footer .footer-links {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: -10px 0;
+}
+.footer .footer-links a {
+  color: #000000;
+  padding: 10px;
+  border-radius: 40px;
+}
+.footer .footer-links a:active {
+  color: #adadad;
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer-links a:hover {
+    color: #adadad;
+  }
+}
 html {
   background: #000000;
 }

@@ -1,0 +1,15 @@
+.section-7 {
+  background: $primary;
+
+  h2 {
+    line-height: 40.32px;
+
+    &.highlighted {
+      color: $green-button-hover;
+    }
+  }
+
+  button {
+    margin-top: 32px;
+  }
+}
