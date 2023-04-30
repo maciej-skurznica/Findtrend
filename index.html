@@ -7,12 +7,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0 viewport-fit=cover"
     />
-
-    <title>Findtrend</title>
     <meta
       name="description"
       content="A responsive website created for training purposes, featuring a pixel-perfect copy of a professional design"
     />
+    <title>Findtrend</title>
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -20,7 +19,6 @@
       sizes="any"
     />
     <link rel="apple-touch-icon" href="./assets/images/Fav-256px.png" sizes="180x180" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -258,54 +256,7 @@
           <span>+1000 Startup grow</span>
         </h2>
         <div class="section-4-table">
-          <div class="table-wrapper">
-            <img src="./assets/images/brand1.png" alt="brand1" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand2.png" alt="brand2" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand3.png" alt="brand3" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand4.png" alt="brand4" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand5.png" alt="brand5" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand6.png" alt="brand6" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand7.png" alt="brand7" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand8.png" alt="brand8" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand9.png" alt="brand9" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand10.png" alt="brand10" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand11.png" alt="brand11" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand12.png" alt="brand12" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand13.png" alt="brand13" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand14.png" alt="brand14" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand15.png" alt="brand15" />
-          </div>
-          <div class="table-wrapper">
-            <img src="./assets/images/brand16.png" alt="brand16" />
-          </div>
+          <!-- loop in script.js -->
         </div>
       </div>
 
@@ -316,30 +267,7 @@
           <span>to Findtrend</span>
         </h2>
         <div class="section-5-platforms-icons disable-scrollbar">
-          <div class="icon-wrapper">
-            <img src="./assets/images/social media8.png" alt="platform8" />
-          </div>
-          <div class="icon-wrapper highlighted">
-            <img src="./assets/images/social media7.png" alt="platform7" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="./assets/images/social media6.png" alt="platform6" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="./assets/images/social media5.png" alt="platform5" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="./assets/images/social media4.png" alt="platform4" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="./assets/images/social media3.png" alt="platform3" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="./assets/images/social media2.png" alt="platform2" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="./assets/images/social media1.png" alt="platform1" />
-          </div>
+          <!-- loop in script.js -->
         </div>
         <div class="section-5-embeddings">
           <blockquote class="twitter-tweet">
@@ -471,52 +399,6 @@
     </div>
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script>
-      // navbar
-      const navbar = document.querySelector(".navbar");
-      const navbarTop = document.querySelector(".navbar-top");
-      const dropdownBtn = document.querySelector(".navbar-dropdown-btn");
-      const navbarMenu = document.querySelector(".navbar-dropdown-menu");
-      const menuBtn = document.querySelector("#menu");
-      const closeBtn = document.querySelector("#close");
-      const allMenuItems = document.querySelectorAll(
-        ".navbar-links a, .navbar-btns button"
-      );
-      // section-6
-      const toggleBtn = document.querySelector(".toggle-wrapper input");
-      const card1Price = document.querySelector("#card-1");
-      const card2Price = document.querySelector("#card-2");
-      const card3Price = document.querySelector("#card-3");
-
-      // navbar
-      const handleDropdownClick = () => {
-        navbar.classList.toggle("full-height");
-        navbarTop.classList.toggle("navbar-top-active");
-        navbarMenu.classList.toggle("navbar-dropdown-menu-active");
-        menuBtn.hidden = !menuBtn.hidden;
-        closeBtn.hidden = !closeBtn.hidden;
-      };
-
-      dropdownBtn.addEventListener("click", () => handleDropdownClick());
-
-      allMenuItems.forEach((link) => {
-        link.addEventListener("click", () => handleDropdownClick());
-      });
-
-      // section-6
-      const handleToggleClick = () => {
-        if (toggleBtn.checked) {
-          card1Price.innerHTML = "$86.40 <span>/Year</span>";
-          card2Price.innerHTML = "$216 <span>/Year</span>";
-          card3Price.innerHTML = "$518.40 <span>/Year</span>";
-        } else {
-          card1Price.innerHTML = "$8 <span>/Month</span>";
-          card2Price.innerHTML = "$20 <span>/Month</span>";
-          card3Price.innerHTML = "$48 <span>/Month</span>";
-        }
-      };
-
-      toggleBtn.addEventListener("click", () => handleToggleClick());
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
