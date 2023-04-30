@@ -405,7 +405,7 @@
           <div class="section-6-card">
             <h3 class="card-title">Personal</h3>
             <div class="card-sub-title">Special first packet for all</div>
-            <h1 class="card-price">
+            <h1 class="card-price" id="card-1">
               $8
               <span>/Month</span>
             </h1>
@@ -419,7 +419,7 @@
           <div class="section-6-card card-green">
             <h3 class="card-title">Regular</h3>
             <div class="card-sub-title">Recommended for personal pro</div>
-            <h1 class="card-price">
+            <h1 class="card-price" id="card-2">
               $20
               <span>/Month</span>
             </h1>
@@ -434,7 +434,7 @@
           <div class="section-6-card">
             <h3 class="card-title">Personal</h3>
             <div class="card-sub-title">Special first packet for all</div>
-            <h1 class="card-price">
+            <h1 class="card-price" id="card-3">
               $48
               <span>/Month</span>
             </h1>
@@ -460,6 +460,7 @@
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script>
+      // navbar
       const navbar = document.querySelector(".navbar");
       const navbarTop = document.querySelector(".navbar-top");
       const dropdownBtn = document.querySelector(".navbar-dropdown-btn");
@@ -469,8 +470,14 @@
       const allMenuItems = document.querySelectorAll(
         ".navbar-links a, .navbar-btns button"
       );
+      // section-6
+      const toggleBtn = document.querySelector(".toggle-wrapper input");
+      const card1Price = document.querySelector("#card-1");
+      const card2Price = document.querySelector("#card-2");
+      const card3Price = document.querySelector("#card-3");
 
-      const handleClick = () => {
+      // navbar
+      const handleDropdownClick = () => {
         navbar.classList.toggle("full-height");
         navbarTop.classList.toggle("navbar-top-active");
         navbarMenu.classList.toggle("navbar-dropdown-menu-active");
@@ -478,11 +485,26 @@
         closeBtn.hidden = !closeBtn.hidden;
       };
 
-      dropdownBtn.addEventListener("click", () => handleClick());
+      dropdownBtn.addEventListener("click", () => handleDropdownClick());
 
       allMenuItems.forEach((link) => {
-        link.addEventListener("click", () => handleClick());
+        link.addEventListener("click", () => handleDropdownClick());
       });
+
+      // section-6
+      const handleToggleClick = () => {
+        if (toggleBtn.checked) {
+          card1Price.innerHTML = "$86.40 <span>/Year</span>";
+          card2Price.innerHTML = "$216 <span>/Year</span>";
+          card3Price.innerHTML = "$518.40 <span>/Year</span>";
+        } else {
+          card1Price.innerHTML = "$8 <span>/Month</span>";
+          card2Price.innerHTML = "$20 <span>/Month</span>";
+          card3Price.innerHTML = "$48 <span>/Month</span>";
+        }
+      };
+
+      toggleBtn.addEventListener("click", () => handleToggleClick());
     </script>
   </body>
 </html>
