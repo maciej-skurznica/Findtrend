@@ -1,7 +1,6 @@
 .navbar {
   width: 100%;
   min-width: 375px;
-  flex-direction: column;
   position: absolute;
 }
 
@@ -24,8 +23,8 @@
 }
 
 .navbar-logo {
-  width: 40px;
   height: 40px;
+  align-items: center;
 }
 
 .navbar-dropdown-btn {
@@ -95,6 +94,15 @@
   }
 }
 
+@keyframes navbar-dropdown-menu {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   .navbar-links a:hover {
     color: $grey-2;
@@ -109,11 +117,63 @@
   }
 }
 
-@keyframes navbar-dropdown-menu {
-  0% {
-    opacity: 0.2;
+@media screen and (min-width: $breakpoint-6) {
+  .navbar {
+    max-width: 1316px;
   }
-  100% {
-    opacity: 1;
+
+  .navbar-top {
+    height: 99px;
+  }
+
+  .navbar-logo {
+    z-index: 6;
+
+    .navbar-logo-findtrend {
+      display: block;
+      padding: 7px 0 0 10.32px;
+    }
+  }
+
+  .navbar-dropdown-btn {
+    visibility: hidden;
+  }
+
+  .navbar-dropdown-menu {
+    width: calc(100% - 32px);
+    height: 99px;
+    background: none;
+    flex-direction: row;
+    top: 0;
+    right: 18px;
+    left: 18px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    background: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+  }
+
+  .navbar-links a {
+    padding: 10px;
+  }
+
+  .navbar-btns {
+    flex-direction: row;
+    padding-bottom: 0;
+    justify-content: flex-end;
+    gap: 8px;
+    background-color: none;
   }
 }
