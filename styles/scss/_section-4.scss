@@ -44,3 +44,45 @@
     width: calc(80% + 15px);
   }
 }
+
+@media screen and (min-width: $breakpoint-4) {
+  .section-4-table .table-wrapper {
+    flex-basis: calc(25% - 15px);
+  }
+}
+
+@media screen and (min-width: $breakpoint-5) {
+  .section-4-h2 {
+    width: 100%;
+    font-size: $desktop-font-large-2;
+    line-height: 76.03px;
+    margin-bottom: 80px;
+  }
+
+  .section-4-table {
+    width: calc(100% + 15px);
+  }
+}
+
+@media screen and (min-width: $breakpoint-6) {
+  .section-4-table {
+    column-gap: 32px;
+    row-gap: 32px;
+    margin-right: -32px;
+    width: calc(100% + 32px);
+
+    .table-wrapper {
+      flex-basis: calc(25% - 32px);
+
+      img {
+        transform: scale(0.4);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-7) {
+  .section-4-table .table-wrapper img {
+    transform: scale(0.5);
+  }
+}
