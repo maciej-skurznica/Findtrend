@@ -153,10 +153,9 @@ button:active {
   height: 40px;
   align-items: center;
   display: flex;
-  animation: navbar-animation 400ms;
 }
 .navbar-logo:active {
-  transform: translate(2px, 1px);
+  transform: scale(1.1);
   transition: 0.1s;
 }
 
@@ -280,10 +279,14 @@ button:active {
   }
   .navbar-logo {
     z-index: 6;
+    animation: navbar-animation 400ms;
   }
   .navbar-logo .navbar-logo-findtrend {
     display: block;
     padding: 7px 0 0 10.32px;
+  }
+  .navbar-logo:active {
+    transform: translate(2px, 1px);
   }
   .navbar-dropdown-btn {
     visibility: hidden;
@@ -364,6 +367,7 @@ button:active {
 }
 .section-1-paragraphs p {
   color: #8b8b8b;
+  font-family: "Roboto", sans-serif;
 }
 .section-1-paragraphs p span {
   white-space: nowrap;
