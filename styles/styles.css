@@ -424,7 +424,8 @@ button:active {
 }
 @media screen and (min-width: 600px) {
   .section-1 {
-    background: url("../../assets/images/bg-hero-website.jpg") no-repeat center center;
+    background: url("../../assets/images/bg-hero-website.png");
+    background-size: 100%;
   }
 }
 @media screen and (min-width: 992px) {
