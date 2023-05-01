@@ -85,3 +85,20 @@ button {
     background-color: $black-2;
   }
 }
+
+@media screen and (min-width: $breakpoint-5) {
+  h2 {
+    font-size: $desktop-font-ex-large;
+  }
+
+  p {
+    font-size: $desktop-font-small;
+    line-height: 27px;
+  }
+
+  button {
+    font-size: $desktop-font-small;
+    line-height: 25.2px;
+    padding: 16px 32px;
+  }
+}

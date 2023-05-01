@@ -109,6 +109,20 @@ button:active {
     background-color: #2b2b2b;
   }
 }
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 72px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  button {
+    font-size: 18px;
+    line-height: 25.2px;
+    padding: 16px 32px;
+  }
+}
 .navbar {
   width: 100%;
   min-width: 375px;
@@ -319,9 +333,6 @@ button:active {
 
 .section-1 {
   background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   padding: 144px 0 330px;
 }
@@ -335,9 +346,13 @@ button:active {
   margin-top: 16px;
   flex-direction: column;
   align-items: center;
+  padding: 0 40px;
 }
 .section-1-paragraphs p {
   color: #8b8b8b;
+}
+.section-1-paragraphs p span {
+  white-space: nowrap;
 }
 
 .section-1-btn {
@@ -387,6 +402,46 @@ button:active {
 @media screen and (min-width: 490px) {
   .section-1-tab img {
     width: 380px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .section-1 {
+    background: url("../../assets/images/bg-hero-website.jpg") no-repeat center center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-1 {
+    padding: 198px 0 365px;
+  }
+  .section-1-h2 {
+    line-height: 80.64px;
+  }
+  .section-1-paragraphs {
+    margin-top: 24px;
+  }
+  .section-1-btn {
+    margin-top: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .section-1-tabs {
+    margin-top: 0;
+    max-width: 1440px;
+  }
+  .section-1-tab.twitter {
+    top: 100px;
+    left: calc(20% - 190px);
+  }
+  .section-1-tab.pinterest {
+    top: 150px;
+    left: calc(40% - 190px);
+  }
+  .section-1-tab.facebook {
+    top: 100px;
+    left: calc(60% - 190px);
+  }
+  .section-1-tab.dribble {
+    top: 150px;
+    left: calc(80% - 190px);
   }
 }
 .section-2 {
