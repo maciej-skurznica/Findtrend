@@ -539,16 +539,30 @@ button:active {
   line-height: 42.77px;
   text-align: left;
 }
-.section-3-h2 .grey {
-  color: #adadad;
+.section-3-h2 .no-break {
+  white-space: nowrap;
 }
-.section-3-h2.grey {
+.section-3-h2.grey,
+.section-3-h2 .grey {
   color: #adadad;
 }
 
 @media screen and (min-width: 430px) {
   .section-3-h2 {
     width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-3-h2 {
+    line-height: 76.03px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-3-h2 {
+    max-width: 1160px;
   }
 }
 .section-4 {

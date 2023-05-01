@@ -7,11 +7,12 @@
   line-height: 42.77px;
   text-align: left;
 
-  .grey {
-    color: $grey-2;
+  .no-break {
+    white-space: nowrap;
   }
 
-  &.grey {
+  &.grey,
+  .grey {
     color: $grey-2;
   }
 }
@@ -19,5 +20,20 @@
 @media screen and (min-width: $breakpoint-1) {
   .section-3-h2 {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-5) {
+  .section-3-h2 {
+    line-height: 76.03px;
+    width: 100%;
+    font-weight: $weight-bold;
+    font-size: $desktop-font-large-2;
+  }
+}
+
+@media screen and (min-width: $breakpoint-7) {
+  .section-3-h2 {
+    max-width: 1160px;
   }
 }
