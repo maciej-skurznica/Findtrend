@@ -139,7 +139,7 @@ button:active {
   animation: navbar-animation 400ms;
 }
 .navbar-logo:active {
-  transform: translate(2px, 2px);
+  transform: translate(2px, 1px);
   transition: 0.1s;
 }
 
