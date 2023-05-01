@@ -7,6 +7,7 @@
   color: $black;
   font-weight: $weight-bold;
   line-height: 40.32px;
+  margin: 0 -5px;
 }
 
 .section-2-tab {
@@ -47,15 +48,33 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-2) {
+@media screen and (min-width: $breakpoint-3) {
   .section-2-tab img {
     &.tab-png {
-      width: 380px;
+      width: 341px;
       margin: 30px;
     }
 
     &.section-2-tab-arrow-png {
       width: 120px;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-5) {
+  .section-2 {
+    gap: 60px;
+  }
+
+  .section-2-h2 {
+    line-height: 85.54px;
+  }
+
+  .section-2-tab {
+    border-radius: 16px;
+
+    img.tab-png {
+      margin: 60px 80px;
     }
   }
 }

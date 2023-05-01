@@ -122,6 +122,9 @@ button:active {
     line-height: 25.2px;
     padding: 16px 32px;
   }
+  .section {
+    padding: 140px;
+  }
 }
 .navbar {
   width: 100%;
@@ -464,6 +467,7 @@ button:active {
   color: #000000;
   font-weight: 700;
   line-height: 40.32px;
+  margin: 0 -5px;
 }
 
 .section-2-tab {
@@ -499,13 +503,27 @@ button:active {
   color: #000000;
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 600px) {
   .section-2-tab img.tab-png {
-    width: 380px;
+    width: 341px;
     margin: 30px;
   }
   .section-2-tab img.section-2-tab-arrow-png {
     width: 120px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-2 {
+    gap: 60px;
+  }
+  .section-2-h2 {
+    line-height: 85.54px;
+  }
+  .section-2-tab {
+    border-radius: 16px;
+  }
+  .section-2-tab img.tab-png {
+    margin: 60px 80px;
   }
 }
 .section-3 {
