@@ -1,8 +1,8 @@
 .section-1 {
   background: url("../../assets/images/bg-hero-mobile.jpg") no-repeat center center;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding: 144px 0 330px;
 }
@@ -16,7 +16,7 @@
   margin-top: 16px;
   flex-direction: column;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 13%;
 
   p {
     color: $grey-1;
