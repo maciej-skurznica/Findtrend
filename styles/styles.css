@@ -220,7 +220,7 @@ button:active {
     background-color: #adadad;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .navbar {
     max-width: 1316px;
   }
@@ -251,7 +251,7 @@ button:active {
   .navbar-links {
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     padding: 0;
     background: none;
     position: absolute;
@@ -268,8 +268,22 @@ button:active {
     flex-direction: row;
     padding-bottom: 0;
     justify-content: flex-end;
-    gap: 8px;
+    gap: 4px;
     background-color: none;
+  }
+  .navbar-btns button.navbar-btn {
+    padding: 10px 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar-links {
+    gap: 20px;
+  }
+  .navbar-btns {
+    gap: 8px;
+  }
+  .navbar-btns button.navbar-btn {
+    padding: 12px 32px;
   }
 }
 .main {
