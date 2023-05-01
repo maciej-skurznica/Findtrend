@@ -136,7 +136,7 @@ button:active {
   height: 40px;
   align-items: center;
   display: flex;
-  animation: navbar-dropdown-menu 400ms;
+  animation: navbar-animation 400ms;
 }
 .navbar-logo:active {
   transform: translate(2px, 2px);
@@ -173,7 +173,7 @@ button:active {
   top: 88px;
   z-index: 5;
   display: none;
-  animation: navbar-dropdown-menu 400ms;
+  animation: navbar-animation 400ms;
 }
 
 .navbar-dropdown-menu-active {
@@ -223,7 +223,7 @@ button:active {
   color: #000000;
 }
 
-@keyframes navbar-dropdown-menu {
+@keyframes navbar-animation {
   0% {
     opacity: 0.2;
   }

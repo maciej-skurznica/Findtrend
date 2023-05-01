@@ -26,7 +26,7 @@
   height: 40px;
   align-items: center;
   display: flex;
-  animation: navbar-dropdown-menu 400ms;
+  animation: navbar-animation 400ms;
 
   &:active {
     transform: translate(2px, 2px);
@@ -69,7 +69,7 @@
   top: 88px;
   z-index: 5;
   display: none;
-  animation: navbar-dropdown-menu 400ms;
+  animation: navbar-animation 400ms;
 }
 
 .navbar-dropdown-menu-active {
@@ -122,9 +122,10 @@
   }
 }
 
-@keyframes navbar-dropdown-menu {
+@keyframes navbar-animation {
   0% {
     opacity: 0.2;
+    // display: none;
   }
   100% {
     opacity: 1;
