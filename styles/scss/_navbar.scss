@@ -25,11 +25,39 @@
 .navbar-logo {
   height: 40px;
   align-items: center;
+  display: flex;
+  animation: navbar-dropdown-menu 400ms;
+
+  &:active {
+    transform: translate(2px, 2px);
+    transition: 0.1s;
+  }
 }
 
-.navbar-dropdown-btn {
+.navbar-dropdown-btn.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   margin-right: 5px;
   cursor: pointer;
+  height: 22px;
+  width: 22px;
+
+  svg {
+    transition: transform 400ms ease-in-out 20ms;
+  }
+
+  &.hamburger-transform {
+    svg.hamburger-icon-top {
+      transform: translateY(4px) rotate(45deg);
+    }
+
+    svg.hamburger-icon-bottom {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+  }
 }
 
 .navbar-dropdown-menu {
@@ -126,6 +154,10 @@
     height: 99px;
   }
 
+  .navbar-top-active {
+    background-color: transparent;
+  }
+
   .navbar-logo {
     z-index: 6;
 
@@ -174,7 +206,7 @@
     padding-bottom: 0;
     justify-content: flex-end;
     gap: 4px;
-    background-color: none;
+    background-color: transparent;
 
     button.navbar-btn {
       padding: 10px 28px;

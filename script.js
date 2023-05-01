@@ -4,8 +4,7 @@ const navbar = document.querySelector(".navbar");
 const navbarTop = document.querySelector(".navbar-top");
 const dropdownBtn = document.querySelector(".navbar-dropdown-btn");
 const navbarMenu = document.querySelector(".navbar-dropdown-menu");
-const menuBtn = document.querySelector("#menu");
-const closeBtn = document.querySelector("#close");
+const icon = document.querySelector(".hamburger-icon");
 const allMenuItems = document.querySelectorAll(".navbar-links a, .navbar-btns button");
 // section-4-table
 const table = document.querySelector(".section-4-table");
@@ -22,8 +21,7 @@ const handleDropdownClick = () => {
   navbar.classList.toggle("full-height");
   navbarTop.classList.toggle("navbar-top-active");
   navbarMenu.classList.toggle("navbar-dropdown-menu-active");
-  menuBtn.hidden = !menuBtn.hidden;
-  closeBtn.hidden = !closeBtn.hidden;
+  icon.classList.toggle("hamburger-transform");
 };
 
 dropdownBtn.addEventListener("click", () => handleDropdownClick());
