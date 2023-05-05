@@ -685,6 +685,7 @@ button:active {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin: -10px 0;
 }
 
 .section-5-button {
@@ -693,19 +694,60 @@ button:active {
 
 @media screen and (min-width: 430px) {
   .section-5-h2,
-  .section-5-platforms-icons {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 490px) {
+  .section-5-platforms-icons,
   .section-5-embeddings {
-    width: 90%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 816px) {
   .section-5-platforms-icons {
     justify-content: center;
     margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-5-h2 {
+    line-height: 76.03px;
+    margin-bottom: 80px;
+    width: 100%;
+  }
+  .section-5-platforms-icons {
+    width: 100%;
+    margin-bottom: 77px;
+  }
+  .section-5-platforms-icons .icon-wrapper {
+    padding: 7px;
+  }
+  .section-5-platforms-icons .icon-wrapper img {
+    transform: scale(0.7);
+  }
+  .section-5-embeddings {
+    width: 100%;
+  }
+  .section-5-button {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-5-platforms-icons {
+    column-gap: 24px;
+  }
+  .section-5-platforms-icons .icon-wrapper {
+    padding: 16px;
+  }
+  .section-5-platforms-icons .icon-wrapper img {
+    transform: scale(0.9);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-5-platforms-icons {
+    column-gap: 24px;
+  }
+  .section-5-platforms-icons .icon-wrapper {
+    padding: 32px;
+  }
+  .section-5-platforms-icons .icon-wrapper img {
+    transform: scale(1);
   }
 }
 .section-6 {
