@@ -104,5 +104,9 @@ button {
 
   .section {
     padding: 140px;
+
+    > * {
+      max-width: 1160px;
+    }
   }
 }
