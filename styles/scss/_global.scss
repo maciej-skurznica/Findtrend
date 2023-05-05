@@ -87,8 +87,16 @@ button {
 }
 
 @media screen and (min-width: $breakpoint-5) {
+  h1 {
+    font-size: $desktop-font-ultra-large;
+    line-height: $desktop-font-ultra-large;
+  }
   h2 {
     font-size: $desktop-font-ex-large;
+  }
+
+  h3 {
+    font-size: $desktop-font-medium;
   }
 
   p {

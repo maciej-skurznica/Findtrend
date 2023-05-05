@@ -1,6 +1,5 @@
 .section-5 {
   background-color: $grey-5;
-  // overflow: hidden;
 }
 
 .section-5-h2 {
@@ -114,6 +113,7 @@
 @media screen and (min-width: $breakpoint-7) {
   .section-5-embeddings {
     // transform: scale(1.45);
+    // position: relative;
   }
 
   .section-5-platforms-icons {

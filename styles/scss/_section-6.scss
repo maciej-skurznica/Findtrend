@@ -100,7 +100,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 80px;
-  column-gap: 40px;
   row-gap: 24px;
   width: 100%;
 
@@ -153,5 +152,85 @@
 @media screen and (min-width: $breakpoint-1) {
   .section-6-deal-container {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-5) {
+  .section-6-h2 {
+    line-height: 76.03px;
+    font-weight: $weight-bold;
+    font-size: $desktop-font-large-2;
+    margin-bottom: 40px;
+  }
+
+  .section-6-toggle-btn.toggle-wrapper {
+    input {
+      &:checked + .toggle-button {
+        .knob:after {
+          transform: translateX(52px);
+        }
+      }
+    }
+
+    .toggle-button {
+      height: 52px;
+      font-size: $desktop-font-medium;
+      line-height: 29.05px;
+
+      &:before {
+        right: 126px;
+      }
+
+      &:after {
+        left: 126px;
+      }
+
+      .knob:after {
+        height: 36px;
+        width: 36px;
+      }
+    }
+
+    img.arrow-png {
+      transform: scale(0.8);
+      right: -220px;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-6) {
+  .section-6-deal-container {
+    flex-direction: row;
+    width: 100%;
+    column-gap: 20px;
+    // align-content: flex-end;
+
+    .section-6-card {
+      border-radius: 16px;
+
+      .card-sub-title {
+        padding: 8px 0 32px;
+      }
+
+      ul.card-benefit-list {
+        padding-bottom: 43px;
+        min-height: 331px;
+        padding-left: 24px;
+      }
+
+      button.card-button {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-7) {
+  .section-6-deal-container {
+    column-gap: 40px;
+
+    .section-6-card {
+      padding: 32px 32px 24px;
+    }
   }
 }

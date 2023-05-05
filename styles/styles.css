@@ -110,8 +110,15 @@ button:active {
   }
 }
 @media screen and (min-width: 992px) {
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
   h2 {
     font-size: 72px;
+  }
+  h3 {
+    font-size: 24px;
   }
   p {
     font-size: 18px;
@@ -842,7 +849,6 @@ button:active {
   flex-direction: column;
   align-items: center;
   margin-top: 80px;
-  column-gap: 40px;
   row-gap: 24px;
   width: 100%;
 }
@@ -887,6 +893,65 @@ button:active {
 @media screen and (min-width: 430px) {
   .section-6-deal-container {
     width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-6-h2 {
+    line-height: 76.03px;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+  .section-6-toggle-btn.toggle-wrapper input:checked + .toggle-button .knob:after {
+    transform: translateX(52px);
+  }
+  .section-6-toggle-btn.toggle-wrapper .toggle-button {
+    height: 52px;
+    font-size: 24px;
+    line-height: 29.05px;
+  }
+  .section-6-toggle-btn.toggle-wrapper .toggle-button:before {
+    right: 126px;
+  }
+  .section-6-toggle-btn.toggle-wrapper .toggle-button:after {
+    left: 126px;
+  }
+  .section-6-toggle-btn.toggle-wrapper .toggle-button .knob:after {
+    height: 36px;
+    width: 36px;
+  }
+  .section-6-toggle-btn.toggle-wrapper img.arrow-png {
+    transform: scale(0.8);
+    right: -220px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-6-deal-container {
+    flex-direction: row;
+    width: 100%;
+    column-gap: 20px;
+  }
+  .section-6-deal-container .section-6-card {
+    border-radius: 16px;
+  }
+  .section-6-deal-container .section-6-card .card-sub-title {
+    padding: 8px 0 32px;
+  }
+  .section-6-deal-container .section-6-card ul.card-benefit-list {
+    padding-bottom: 43px;
+    min-height: 331px;
+    padding-left: 24px;
+  }
+  .section-6-deal-container .section-6-card button.card-button {
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-6-deal-container {
+    column-gap: 40px;
+  }
+  .section-6-deal-container .section-6-card {
+    padding: 32px 32px 24px;
   }
 }
 .section-7 {
