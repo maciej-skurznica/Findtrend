@@ -925,7 +925,7 @@ button:active {
     right: -220px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1360px) {
   .section-6-deal-container {
     flex-direction: row;
     width: 100%;
@@ -947,8 +947,12 @@ button:active {
   }
 }
 @media screen and (min-width: 1440px) {
+  .section-6-toggle-btn.toggle-wrapper img.arrow-png {
+    display: none;
+  }
   .section-6-deal-container {
     column-gap: 40px;
+    margin-top: 40px;
   }
   .section-6-deal-container .section-6-card {
     padding: 32px 32px 24px;

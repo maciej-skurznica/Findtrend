@@ -198,12 +198,11 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-6) {
+@media screen and (min-width: $breakpoint-6b) {
   .section-6-deal-container {
     flex-direction: row;
     width: 100%;
     column-gap: 20px;
-    // align-content: flex-end;
 
     .section-6-card {
       border-radius: 16px;
@@ -226,8 +225,13 @@
 }
 
 @media screen and (min-width: $breakpoint-7) {
+  .section-6-toggle-btn.toggle-wrapper img.arrow-png {
+    display: none;
+  }
+
   .section-6-deal-container {
     column-gap: 40px;
+    margin-top: 40px;
 
     .section-6-card {
       padding: 32px 32px 24px;
