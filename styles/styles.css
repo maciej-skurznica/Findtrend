@@ -661,7 +661,6 @@ button:active {
 .section-5-h2 {
   color: #000000;
   line-height: 42.77px;
-  margin-bottom: 32px;
   width: 100%;
 }
 .section-5-h2 span {
@@ -670,9 +669,11 @@ button:active {
 
 .section-5-platforms-icons {
   column-gap: 16px;
-  width: 100%;
   overflow-x: auto;
-  margin-bottom: 17px;
+  padding: 10px;
+  width: calc(100% + 20px);
+  margin-top: 22px;
+  margin-bottom: 7px;
 }
 .section-5-platforms-icons .icon-wrapper {
   background-color: #ffffff;
@@ -705,26 +706,29 @@ button:active {
 
 @media screen and (min-width: 430px) {
   .section-5-h2,
-  .section-5-platforms-icons,
   .section-5-embeddings {
     width: 80%;
+  }
+  .section-5-platforms-icons {
+    width: calc(80% + 20px);
   }
 }
 @media screen and (min-width: 816px) {
   .section-5-platforms-icons {
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
   }
 }
 @media screen and (min-width: 992px) {
   .section-5-h2 {
+    font-size: 64px;
     line-height: 76.03px;
-    margin-bottom: 80px;
     width: 100%;
   }
   .section-5-platforms-icons {
-    width: 100%;
-    margin-bottom: 77px;
+    width: calc(100% + 20px);
+    margin-top: 70px;
+    margin-bottom: 67px;
   }
   .section-5-platforms-icons .icon-wrapper {
     padding: 7px;
@@ -752,7 +756,7 @@ button:active {
 }
 @media screen and (min-width: 1440px) {
   .section-5-platforms-icons {
-    column-gap: 24px;
+    max-width: unset;
   }
   .section-5-platforms-icons .icon-wrapper {
     padding: 32px;

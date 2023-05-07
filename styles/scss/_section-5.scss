@@ -1,11 +1,11 @@
 .section-5 {
   background-color: $grey-5;
+  // overflow: auto;
 }
 
 .section-5-h2 {
   color: $black;
   line-height: 42.77px;
-  margin-bottom: 32px;
   width: 100%;
 
   span {
@@ -15,9 +15,11 @@
 
 .section-5-platforms-icons {
   column-gap: 16px;
-  width: 100%;
   overflow-x: auto;
-  margin-bottom: 17px; // 32px - 15px hidden scrollbar
+  padding: 10px;
+  width: calc(100% + 20px);
+  margin-top: 22px;
+  margin-bottom: 7px; // 22px - 15px hidden scrollbar
 
   .icon-wrapper {
     background-color: $white;
@@ -54,29 +56,33 @@
 
 @media screen and (min-width: $breakpoint-1) {
   .section-5-h2,
-  .section-5-platforms-icons,
   .section-5-embeddings {
     width: 80%;
+  }
+
+  .section-5-platforms-icons {
+    width: calc(80% + 20px);
   }
 }
 
 @media screen and (min-width: 816px) {
   .section-5-platforms-icons {
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
   }
 }
 
 @media screen and (min-width: $breakpoint-5) {
   .section-5-h2 {
+    font-size: $desktop-font-large-2;
     line-height: 76.03px;
-    margin-bottom: 80px;
     width: 100%;
   }
 
   .section-5-platforms-icons {
-    width: 100%;
-    margin-bottom: 77px;
+    width: calc(100% + 20px);
+    margin-top: 70px;
+    margin-bottom: 67px;
 
     .icon-wrapper {
       padding: 7px;
@@ -111,13 +117,16 @@
 }
 
 @media screen and (min-width: $breakpoint-7) {
-  .section-5-embeddings {
-    // transform: scale(1.45);
-    // position: relative;
-  }
+  // .section-5-embeddings {
+  //   gap: 43px;
+
+  //   .twitter-tweet {
+  //     transform: scale(1.45);
+  //   }
+  // }
 
   .section-5-platforms-icons {
-    column-gap: 24px;
+    max-width: unset;
 
     .icon-wrapper {
       padding: 32px;
