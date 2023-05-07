@@ -27,6 +27,7 @@
     padding: 1px 2px;
     cursor: pointer;
     transition: all 0.2s;
+    position: relative;
 
     img {
       transform: scale(0.5);
@@ -52,6 +53,16 @@
 
 .section-5-button {
   margin-top: 32px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .section-5-platforms-icons .icon-wrapper:hover {
+    transform: translateY(-3px);
+
+    &:active {
+      transform: matrix(1.1, 0, 0, 1.1, 0, -3);
+    }
+  }
 }
 
 @media screen and (min-width: $breakpoint-1) {

@@ -681,6 +681,7 @@ button:active {
   padding: 1px 2px;
   cursor: pointer;
   transition: all 0.2s;
+  position: relative;
 }
 .section-5-platforms-icons .icon-wrapper img {
   transform: scale(0.5);
@@ -704,6 +705,14 @@ button:active {
   margin-top: 32px;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .section-5-platforms-icons .icon-wrapper:hover {
+    transform: translateY(-3px);
+  }
+  .section-5-platforms-icons .icon-wrapper:hover:active {
+    transform: matrix(1.1, 0, 0, 1.1, 0, -3);
+  }
+}
 @media screen and (min-width: 430px) {
   .section-5-h2,
   .section-5-embeddings {
