@@ -42,6 +42,7 @@ button {
   border-radius: 40px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-family: $font-primary;
 
   &:active {
     transform: scale(1.05);
