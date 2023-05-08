@@ -1,6 +1,5 @@
 .section-5 {
   background-color: $grey-5;
-  // overflow: auto;
 }
 
 .section-5-h2 {
@@ -49,6 +48,8 @@
   align-items: center;
   width: 100%;
   margin: -10px 0;
+  overflow: auto;
+  max-height: 1000px;
 }
 
 .section-5-button {
@@ -129,10 +130,10 @@
 
 @media screen and (min-width: $breakpoint-7) {
   // .section-5-embeddings {
-  //   gap: 43px;
+  //   gap: 23px;
 
   //   .twitter-tweet {
-  //     transform: scale(1.45);
+  //     max-width: 800px !important;
   //   }
   // }
 

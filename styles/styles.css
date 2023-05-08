@@ -699,6 +699,8 @@ button:active {
   align-items: center;
   width: 100%;
   margin: -10px 0;
+  overflow: auto;
+  max-height: 1000px;
 }
 
 .section-5-button {
