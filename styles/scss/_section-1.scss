@@ -80,8 +80,8 @@
 
 @media screen and (min-width: $breakpoint-3) {
   .section-1 {
-    background: url("../../assets/images/bg-hero-website.png");
-    background-size: 100%;
+    background: url("../../assets/images/bg-hero-website.png") repeat center center fixed;
+    background-size: 101%;
   }
 }
 

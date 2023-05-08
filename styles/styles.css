@@ -280,6 +280,9 @@ button:active {
   .navbar {
     max-width: 1316px;
   }
+  .navbar.full-height {
+    height: unset;
+  }
   .navbar-top {
     height: 99px;
     padding: 0 18px;
@@ -434,8 +437,8 @@ button:active {
 }
 @media screen and (min-width: 600px) {
   .section-1 {
-    background: url("../../assets/images/bg-hero-website.png");
-    background-size: 100%;
+    background: url("../../assets/images/bg-hero-website.png") repeat center center fixed;
+    background-size: 101%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -699,8 +702,6 @@ button:active {
   align-items: center;
   width: 100%;
   margin: -10px 0;
-  overflow: auto;
-  max-height: 1000px;
 }
 
 .section-5-button {
