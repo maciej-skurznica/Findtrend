@@ -14,3 +14,18 @@
     margin-top: 32px;
   }
 }
+
+@media screen and (min-width: $breakpoint-5) {
+  .section-7 {
+    padding: 140px;
+
+    h2 {
+      line-height: 80.67px;
+    }
+
+    button {
+      margin-top: 40px;
+      padding: 16px 52.5px;
+    }
+  }
+}

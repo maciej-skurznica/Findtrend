@@ -1002,6 +1002,18 @@ button:active {
   margin-top: 32px;
 }
 
+@media screen and (min-width: 992px) {
+  .section-7 {
+    padding: 140px;
+  }
+  .section-7 h2 {
+    line-height: 80.67px;
+  }
+  .section-7 button {
+    margin-top: 40px;
+    padding: 16px 52.5px;
+  }
+}
 .footer {
   background: #fafafa;
   gap: 80px;
