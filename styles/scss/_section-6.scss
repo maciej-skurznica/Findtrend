@@ -110,6 +110,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    transition: all 300ms ease-out;
 
     .card-sub-title {
       padding: 14px 0 24px;
@@ -146,6 +147,12 @@
 
   .card-green {
     background: $primary;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .section-6-deal-container .section-6-card:hover {
+    scale: 1.02;
   }
 }
 
@@ -198,14 +205,17 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-6b) {
+@media screen and (min-width: $breakpoint-6) {
   .section-6-deal-container {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    column-gap: 20px;
+    gap: 20px;
 
     .section-6-card {
       border-radius: 16px;
+      flex-basis: calc(50% - 10px);
 
       .card-sub-title {
         padding: 8px 0 32px;
@@ -224,17 +234,24 @@
   }
 }
 
+@media screen and (min-width: $breakpoint-6b) {
+  .section-6-deal-container .section-6-card {
+    flex-basis: calc(33.33% - (2 * 20px / 3));
+  }
+}
+
 @media screen and (min-width: $breakpoint-7) {
   .section-6-toggle-btn.toggle-wrapper img.arrow-png {
     display: none;
   }
 
   .section-6-deal-container {
-    column-gap: 40px;
+    gap: 40px;
     margin-top: 40px;
 
     .section-6-card {
       padding: 32px 32px 24px;
+      flex-basis: calc(33.33% - (2 * 40px / 3));
     }
   }
 }
