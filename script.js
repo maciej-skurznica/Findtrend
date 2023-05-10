@@ -16,76 +16,6 @@ const card1Price = document.querySelector("#card-1");
 const card2Price = document.querySelector("#card-2");
 const card3Price = document.querySelector("#card-3");
 
-// animations
-// global
-gsap.utils
-  .toArray("h2:not(.section-1-h2), p:not(.section-1-paragraphs p)")
-  .forEach((h2) => {
-    gsap.from(h2, {
-      duration: 1,
-      opacity: 0,
-      y: 50,
-      stagger: 0.5,
-      scrollTrigger: {
-        trigger: h2,
-        start: "top 80%",
-      },
-    });
-  });
-
-ScrollTrigger.create({
-  trigger: ".section-3",
-  start: "top top",
-  pin: true,
-  pinSpacing: false,
-});
-
-// section-1 animations
-const tl = gsap.timeline({ defaults: { duration: 1, opacity: 0, ease: "power1.out" } });
-tl.from(".section-1-h2", { y: 50, stagger: 0.5 })
-  .from(".section-1-paragraphs p span", { stagger: 0.1 }, 0.75)
-  .from(".button-wrapper-gsap", { y: -130 }, 0);
-
-gsap.from(".section-1-tab", {
-  duration: 1,
-  opacity: 0,
-  y: 50,
-  scale: 0.2,
-  stagger: 0.2,
-  scrollTrigger: {
-    trigger: ".section-1-tab",
-    start: "top 85%",
-    end: "bottom 30%",
-  },
-});
-
-gsap.to(".section-1-tab", {
-  x: 3000,
-  rotate: 100,
-  stagger: 0.2,
-  ease: "power1.in",
-  scrollTrigger: {
-    trigger: ".section-1-tab",
-    start: "top 28%",
-    scrub: 2,
-    toggleActions: "restart none none reverse",
-  },
-});
-
-// section-4 animations
-
-// section-6 animations
-gsap.from(".section-6-card", {
-  duration: 1,
-  opacity: 0,
-  y: 50,
-  scrollTrigger: {
-    trigger: ".section-6-card",
-    start: "top 70%",
-    ease: "back",
-  },
-});
-
 // navbar
 const handleDropdownClick = () => {
   navbar.classList.toggle("full-height");
@@ -148,3 +78,83 @@ const handleToggleClick = () => {
 };
 
 toggleBtn.addEventListener("click", () => handleToggleClick());
+
+// animations
+// global
+gsap.utils
+  .toArray("h2:not(.section-1-h2), p:not(.section-1-paragraphs p)")
+  .forEach((h2) => {
+    gsap.from(h2, {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      stagger: 0.5,
+      scrollTrigger: {
+        trigger: h2,
+        start: "top 80%",
+      },
+    });
+  });
+
+ScrollTrigger.create({
+  trigger: ".section-3",
+  start: "top top",
+  pin: true,
+  pinSpacing: false,
+});
+
+// section-1 animations
+const tl = gsap.timeline({ defaults: { duration: 1, opacity: 0, ease: "power1.out" } });
+tl.from(".section-1-h2", { y: 50, stagger: 0.5 })
+  .from(".section-1-paragraphs p span", { stagger: 0.1 }, 0.75)
+  .from(".button-wrapper-gsap", { y: -130 }, 0);
+
+gsap.from(".section-1-tab", {
+  duration: 1,
+  opacity: 0,
+  y: 50,
+  scale: 0.2,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: ".section-1-tab",
+    start: "top 85%",
+    end: "bottom 30%",
+  },
+});
+
+gsap.to(".section-1-tab", {
+  x: 3000,
+  rotate: 100,
+  stagger: 0.2,
+  ease: "power1.in",
+  scrollTrigger: {
+    trigger: ".section-1-tab",
+    start: "top 28%",
+    scrub: 2,
+    toggleActions: "restart none none reverse",
+  },
+});
+
+// section-4 animations
+gsap.from(".table-wrapper", {
+  duration: 0.5,
+  scale: 0,
+  opacity: 0,
+  y: 60,
+  scrollTrigger: {
+    trigger: ".table-wrapper",
+    start: "top 60%",
+  },
+});
+
+// section-6 animations
+gsap.from(".section-6-card", {
+  duration: 1,
+  opacity: 0,
+  y: 50,
+  ease: "back",
+  scrollTrigger: {
+    trigger: ".section-6-card",
+    start: "top 70%",
+  },
+});
