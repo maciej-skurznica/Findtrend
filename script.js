@@ -52,11 +52,9 @@ gsap.utils
       opacity: 0,
       y: 50,
       stagger: 0.5,
-      // ease: "back",
       scrollTrigger: {
         trigger: h2,
         start: "top 80%",
-        markers: true,
       },
     });
   });
