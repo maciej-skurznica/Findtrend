@@ -30,6 +30,37 @@ allMenuItems.forEach((link) => {
   link.addEventListener("click", () => handleDropdownClick());
 });
 
+// animations
+// global
+// gsap.from("h2:not(.section-1-h2)", {
+//   duration: 1,
+//   opacity: 0,
+//   y: 50,
+//   stagger: 0.5,
+//   ease: "back",
+//   scrollTrigger: {
+//     trigger: "h2:not(.section-1-h2)",
+//     start: "top 80%",
+//     markers: true,
+//   },
+// });
+gsap.utils
+  .toArray("h2:not(.section-1-h2), p:not(.section-1-paragraphs p)")
+  .forEach((h2) => {
+    gsap.from(h2, {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      stagger: 0.5,
+      // ease: "back",
+      scrollTrigger: {
+        trigger: h2,
+        start: "top 80%",
+        markers: true,
+      },
+    });
+  });
+
 // section-1 animations
 const tl = gsap.timeline({ defaults: { duration: 1, opacity: 0, ease: "power1.out" } });
 tl.from(".section-1-h2", { y: 50, stagger: 0.5 })
