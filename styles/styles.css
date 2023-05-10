@@ -548,6 +548,7 @@ button:active {
 }
 .section-3 {
   background-color: #ffffff;
+  z-index: -1;
 }
 
 .section-3-h2 {
@@ -583,6 +584,7 @@ button:active {
 }
 .section-4 {
   background-color: #ffffff;
+  box-shadow: 0 -30px 50px 50px #ffffff;
 }
 
 .section-4-h2 {

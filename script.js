@@ -16,34 +16,8 @@ const card1Price = document.querySelector("#card-1");
 const card2Price = document.querySelector("#card-2");
 const card3Price = document.querySelector("#card-3");
 
-// navbar
-const handleDropdownClick = () => {
-  navbar.classList.toggle("full-height");
-  navbarTop.classList.toggle("navbar-top-active");
-  navbarMenu.classList.toggle("navbar-dropdown-menu-active");
-  icon.classList.toggle("hamburger-transform");
-};
-
-dropdownBtn.addEventListener("click", () => handleDropdownClick());
-
-allMenuItems.forEach((link) => {
-  link.addEventListener("click", () => handleDropdownClick());
-});
-
 // animations
 // global
-// gsap.from("h2:not(.section-1-h2)", {
-//   duration: 1,
-//   opacity: 0,
-//   y: 50,
-//   stagger: 0.5,
-//   ease: "back",
-//   scrollTrigger: {
-//     trigger: "h2:not(.section-1-h2)",
-//     start: "top 80%",
-//     markers: true,
-//   },
-// });
 gsap.utils
   .toArray("h2:not(.section-1-h2), p:not(.section-1-paragraphs p)")
   .forEach((h2) => {
@@ -58,6 +32,13 @@ gsap.utils
       },
     });
   });
+
+ScrollTrigger.create({
+  trigger: ".section-3",
+  start: "top top",
+  pin: true,
+  pinSpacing: false,
+});
 
 // section-1 animations
 const tl = gsap.timeline({ defaults: { duration: 1, opacity: 0, ease: "power1.out" } });
@@ -89,6 +70,20 @@ gsap.to(".section-1-tab", {
     scrub: 2,
     toggleActions: "restart none none reverse",
   },
+});
+
+// navbar
+const handleDropdownClick = () => {
+  navbar.classList.toggle("full-height");
+  navbarTop.classList.toggle("navbar-top-active");
+  navbarMenu.classList.toggle("navbar-dropdown-menu-active");
+  icon.classList.toggle("hamburger-transform");
+};
+
+dropdownBtn.addEventListener("click", () => handleDropdownClick());
+
+allMenuItems.forEach((link) => {
+  link.addEventListener("click", () => handleDropdownClick());
 });
 
 // section-4-table
