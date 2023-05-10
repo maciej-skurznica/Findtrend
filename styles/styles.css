@@ -701,11 +701,15 @@ button:active {
   transition: 0.2s;
 }
 
-.section-5-embeddings {
+.section-5-tweets {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: -10px 0;
+  gap: 16px;
+}
+.section-5-tweets img {
+  width: 100%;
+  max-width: 800px;
 }
 
 .section-5-button {
@@ -722,7 +726,7 @@ button:active {
 }
 @media screen and (min-width: 430px) {
   .section-5-h2,
-  .section-5-embeddings {
+  .section-5-tweets {
     width: 80%;
   }
   .section-5-platforms-icons {
@@ -752,8 +756,9 @@ button:active {
   .section-5-platforms-icons .icon-wrapper img {
     transform: scale(0.7);
   }
-  .section-5-embeddings {
+  .section-5-tweets {
     width: 100%;
+    gap: 43px;
   }
   .section-5-button {
     margin-top: 80px;

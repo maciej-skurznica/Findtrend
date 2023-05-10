@@ -43,11 +43,16 @@
   }
 }
 
-.section-5-embeddings {
+.section-5-tweets {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: -10px 0;
+  gap: 16px;
+
+  img {
+    width: 100%;
+    max-width: 800px;
+  }
 }
 
 .section-5-button {
@@ -66,7 +71,7 @@
 
 @media screen and (min-width: $breakpoint-1) {
   .section-5-h2,
-  .section-5-embeddings {
+  .section-5-tweets {
     width: 80%;
   }
 
@@ -103,8 +108,9 @@
     }
   }
 
-  .section-5-embeddings {
+  .section-5-tweets {
     width: 100%;
+    gap: 43px;
   }
 
   .section-5-button {
@@ -127,14 +133,6 @@
 }
 
 @media screen and (min-width: $breakpoint-7) {
-  // .section-5-embeddings {
-  //   gap: 23px;
-
-  //   .twitter-tweet {
-  //     max-width: 800px !important;
-  //   }
-  // }
-
   .section-5-platforms-icons {
     max-width: unset;
 
