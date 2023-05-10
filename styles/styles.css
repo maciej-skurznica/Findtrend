@@ -410,6 +410,7 @@ button:active {
 
 .section-1-tab.twitter {
   transform: rotate(-4deg);
+  top: 0;
   z-index: 4;
 }
 

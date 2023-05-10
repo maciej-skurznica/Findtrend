@@ -44,7 +44,7 @@ gsap.from(".section-1-tab", {
   stagger: 0.2,
   scrollTrigger: {
     trigger: ".section-1-tab",
-    start: "top 80%",
+    start: "top 85%",
     end: "bottom 30%",
   },
 });
@@ -53,6 +53,7 @@ gsap.to(".section-1-tab", {
   x: 3000,
   rotate: 100,
   stagger: 0.2,
+  ease: "power1.in",
   scrollTrigger: {
     trigger: ".section-1-tab",
     start: "top 28%",
