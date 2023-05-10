@@ -72,6 +72,20 @@ gsap.to(".section-1-tab", {
   },
 });
 
+// section-4 animations
+
+// section-6 animations
+gsap.from(".section-6-card", {
+  duration: 1,
+  opacity: 0,
+  y: 50,
+  scrollTrigger: {
+    trigger: ".section-6-card",
+    start: "top 70%",
+    ease: "back",
+  },
+});
+
 // navbar
 const handleDropdownClick = () => {
   navbar.classList.toggle("full-height");
