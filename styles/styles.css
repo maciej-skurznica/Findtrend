@@ -911,11 +911,6 @@ button:active {
   background: #a8ff35;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .section-6-deal-container .section-6-card:hover {
-    scale: 1.02;
-  }
-}
 @media screen and (min-width: 430px) {
   .section-6-deal-container {
     width: 80%;

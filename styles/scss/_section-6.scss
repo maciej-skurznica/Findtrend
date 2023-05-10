@@ -150,12 +150,6 @@
   }
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .section-6-deal-container .section-6-card:hover {
-    scale: 1.02;
-  }
-}
-
 @media screen and (min-width: $breakpoint-1) {
   .section-6-deal-container {
     width: 80%;

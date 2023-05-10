@@ -96,13 +96,6 @@ gsap.utils
     });
   });
 
-ScrollTrigger.create({
-  trigger: ".section-3",
-  start: "top top",
-  pin: true,
-  pinSpacing: false,
-});
-
 // section-1 animations
 const tl = gsap.timeline({ defaults: { duration: 1, opacity: 0, ease: "power1.out" } });
 tl.from(".section-1-h2", { y: 50, stagger: 0.5 })
@@ -133,6 +126,14 @@ gsap.to(".section-1-tab", {
     scrub: 2,
     toggleActions: "restart none none reverse",
   },
+});
+
+// section-3 animations
+ScrollTrigger.create({
+  trigger: ".section-3",
+  start: "top top",
+  pin: true,
+  pinSpacing: false,
 });
 
 // section-4 animations
