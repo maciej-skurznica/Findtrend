@@ -30,6 +30,37 @@ allMenuItems.forEach((link) => {
   link.addEventListener("click", () => handleDropdownClick());
 });
 
+// section-1 animations
+const tl = gsap.timeline({ defaults: { duration: 1, opacity: 0, ease: "power1.out" } });
+tl.from(".section-1-h2", { y: 50, stagger: 0.5 })
+  .from(".section-1-paragraphs p span", { stagger: 0.1 }, 0.75)
+  .from(".button-wrapper-gsap", { y: -130 }, 0);
+
+gsap.from(".section-1-tab", {
+  duration: 1,
+  opacity: 0,
+  y: 50,
+  scale: 0.2,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: ".section-1-tab",
+    start: "top 80%",
+    end: "bottom 30%",
+  },
+});
+
+gsap.to(".section-1-tab", {
+  x: 3000,
+  rotate: 100,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: ".section-1-tab",
+    start: "top 28%",
+    scrub: 2,
+    toggleActions: "restart none none reverse",
+  },
+});
+
 // section-4-table
 for (let i = 0; i < 16; i++) {
   const wrapper = document.createElement("div");
